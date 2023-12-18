@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TARgv22.TimerPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="timer_value"
+                Text="Timer Page!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="timer_start"
+                   Text="Start"
+                   FontSize="Medium"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Button x:Name="btn_tagasi"
+                    Text="Tagasi"
+                    FontSize="Large"
+                    BackgroundColor="MediumPurple"
+                    Clicked="btn_tagasi_Clicked">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

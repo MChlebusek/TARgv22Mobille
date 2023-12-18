@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TARgv22.BoxViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <BoxView x:Name="myBoxView"
+         WidthRequest="100"
+         HeightRequest="100"
+         Color="Blue"
+         HorizontalOptions="CenterAndExpand"
+         VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnBoxViewTapped"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+
+            <Label x:Name="clickCountLabel"
+       Text="Click Count: 0"
+       FontSize="20"
+       HorizontalOptions="CenterAndExpand"
+       VerticalOptions="CenterAndExpand"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

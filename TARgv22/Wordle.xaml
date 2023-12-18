@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TARgv22.Wordle">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Welcome to Wordle!"
+                   FontSize="24"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand" />
+            <Label Text="Feedback:   *+* - correct position. *-* - is not in the right position. *.* - This letter is not guessed."
+                   FontSize="18"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand" />
+            <Label Text="Try to guess the 5-letter word."
+                   FontSize="18"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand" />
+
+            <Entry x:Name="GuessEntry" Placeholder="Enter your 5-letter guess"
+                   HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Submit Guess"
+                    Clicked="OnSubmitGuessClicked"
+                    HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="ResultLabel"
+                   FontSize="18"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Start Over"
+                    Clicked="OnStartOverClicked"
+                    HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+
+
